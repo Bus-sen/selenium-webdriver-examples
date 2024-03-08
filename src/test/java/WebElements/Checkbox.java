@@ -13,7 +13,7 @@ public class Checkbox {
         driver.findElement(By.cssSelector("#ctl00_mainContent_chk_SeniorCitizenDiscount")).click();
         System.out.println(driver.findElement(By.cssSelector("#ctl00_mainContent_chk_SeniorCitizenDiscount")).isSelected());
 
-        System.out.println(driver.findElement(By.cssSelector("input[type='checkbox']")).getSize()); //kaç adet checkbox var - hatalı
+        System.out.println(driver.findElements(By.cssSelector("input[type='checkbox']")).size()); //kaç adet checkbox var
         driver.findElement(By.id("divpaxinfo")).click();
         Thread.sleep(2000);
     }
